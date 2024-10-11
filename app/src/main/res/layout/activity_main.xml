@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/buttonSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/button_selector_for_operations"
+        android:contentDescription="/"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonStar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_slash" />
+
+    <ImageButton
+        android:id="@+id/buttonStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/button_selector_for_operations"
+        android:contentDescription="*"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_star" />
+
+    <ImageButton
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/button_selector_for_operations"
+        android:contentDescription="-"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_minus" />
+
+    <ImageButton
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/button_selector_for_operations"
+        android:contentDescription="+"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonEquals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_plus" />
+
+    <ImageButton
+        android:id="@+id/buttonEquals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="52dp"
+
+        android:background="@drawable/button_selector_for_operations"
+        android:contentDescription="="
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_equals" />
+
+    <ImageButton
+        android:id="@+id/buttonPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="52dp"
+
+        android:background="@drawable/button_selector_for_operations"
+        android:contentDescription="."
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEquals"
+        app:srcCompat="@drawable/button_point" />
+
+    <ImageButton
+        android:id="@+id/buttonClear"
+        android:layout_width="253dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+
+        android:contentDescription="clear"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEight"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSlash"
+        app:srcCompat="@drawable/button_clear" />
+
+    <ImageButton
+        android:id="@+id/buttonZero"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="52dp"
+
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="0"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPoint"
+        app:srcCompat="@drawable/button_zero" />
+
+    <ImageButton
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="3"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonPoint"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlus"
+        app:srcCompat="@drawable/button_three" />
+
+    <ImageButton
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonZero"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThree"
+        app:srcCompat="@drawable/button_two" />
+
+    <ImageButton
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonZero"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTwo"
+        app:srcCompat="@drawable/button_one" />
+
+    <ImageButton
+        android:id="@+id/buttonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOne"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFive"
+        app:srcCompat="@drawable/button_four" />
+
+    <ImageButton
+        android:id="@+id/buttonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTwo"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSix"
+        app:srcCompat="@drawable/button_five" />
+
+    <ImageButton
+        android:id="@+id/buttonSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="6"
+        app:layout_constraintBottom_toTopOf="@+id/buttonThree"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMinus"
+        app:srcCompat="@drawable/button_six" />
+
+    <ImageButton
+        android:id="@+id/buttonSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFour"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEight"
+        app:srcCompat="@drawable/button_seven" />
+
+    <ImageButton
+        android:id="@+id/buttonNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSix"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStar"
+        app:srcCompat="@drawable/button_nine" />
+
+    <ImageButton
+        android:id="@+id/buttonEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector_for_numbers"
+        android:contentDescription="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFive"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNine"
+        app:srcCompat="@drawable/button_eight" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="342dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_background_for_numbers"
+        android:contentDescription="text1"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/inter_bold"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:textAlignment="viewEnd"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
